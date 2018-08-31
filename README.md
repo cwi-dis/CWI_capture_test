@@ -10,5 +10,4 @@ The example code in `CaptureTest.cpp` shows how the access function `getPointClo
 The demonstrator gets you a new pointcloud each time you hit the enter key.
 Having a RealSense camera connected is not required. If you have none, the code will get you a synthesized pointcloud that is rotating in space.
 
-For those interested, a pointcloud in PCL format can be obtained from the `void** pointcloud` by casting: `captured_pc = *reinterpret_cast<boost::shared_ptr<PointCloud<PointXYZRGB>>*>(pointcloud)`
-`
+For those interested, a pointcloud in PCL format can be obtained from the `void** pointcloud` by casting: `captured_pc = *reinterpret_cast<boost::shared_ptr<PointCloud<PointXYZRGB>>*>(pointcloud)
